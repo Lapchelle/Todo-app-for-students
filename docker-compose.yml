@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  backend:
+    image: ${DOCKER_REGISTRY-}webapplication1
+    build:
+      context: .
+      dockerfile: WebApplication1/Dockerfile
